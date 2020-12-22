@@ -1,0 +1,4 @@
+planfile
+*.tfstate
+*.backup
+*.tfvars
