@@ -13,12 +13,12 @@ terraform {
 # }
 
 resource "aws_s3_bucket" "some_buckets" {
-    for_each = {
-        food = "public-read"
-        cash = "private"
-    }
-    bucket = "lundsgard-course-demo-${each.key}"
-    acl = each.value
+  for_each = {
+    food = "public-read"
+    cash = "private"
+  }
+  bucket = "lundsgard-course-demo-${each.key}"
+  acl    = each.value
 }
 
 # website::tag::1:: The simplest possible Terraform module: it just outputs "Hello, World!"

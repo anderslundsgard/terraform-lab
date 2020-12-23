@@ -1,7 +1,7 @@
 variable "account_id" {
-  type    = string
+  type = string
 }
 
 variable "role_name" {
-  type    = string
+  type = string
 }

@@ -2,3 +2,5 @@ planfile
 *.tfstate
 *.backup
 *.tfvars
+.terraform
+.terraform.lock.hcl
