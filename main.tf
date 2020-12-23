@@ -5,6 +5,10 @@ terraform {
   required_version = ">= 0.12.26"
 }
 
+data "aws_caller_identity" "current" {
+
+}
+
 # resource "aws_vpc" "example" {
 #   cidr_block = "10.0.0.0/16"
 #   tags = {
@@ -25,3 +29,8 @@ resource "aws_s3_bucket" "some_buckets" {
 output "hello_world" {
   value = "Hello, World!"
 }
+
+output "caller_arn" {
+  value = data.aws_caller_identity.current.arn
+}
+
