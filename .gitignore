@@ -1,5 +1,5 @@
 planfile
-terraform.tf
+backend.tf
 *.tfstate
 *.backup
 *.tfvars
